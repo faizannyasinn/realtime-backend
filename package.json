@@ -1,8 +1,9 @@
 {
-  "name": "my-backend",
-  "main": "index.js",
+  "name": "realtime-backend",
+  "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
