@@ -1,14 +1,21 @@
 {
   "name": "realtime-backend",
   "version": "1.0.0",
+  "description": "Realtime game backend using Express and Socket.IO",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
- "dependencies": {
-  "express": "^4.18.2",
-  "socket.io": "^4.7.2",
-  "cors": "^2.8.5",
-  "uuid": "^9.0.0"           ← ✅ Add this line
-}
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
 }
