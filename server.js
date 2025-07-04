@@ -5,8 +5,17 @@ const socketIo = require('socket.io');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
+const cors = require('cors');
+app.use(cors({
+  origin: "https://gamessarena.netlify.app"
+}));
 const server = http.createServer(app);
-const io = socketIo(server);
+const io = socketIo(server, {
+  cors: {
+    origin: "https://gamessarena.netlify.app",
+    methods: ["GET", "POST"]
+  }
+});
 
 app.use(express.static('public'));
 
